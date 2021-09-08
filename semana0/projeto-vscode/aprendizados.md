@@ -1,0 +1,2 @@
+# Aprendizados da semana
+Fazia tempo que eu não tinha uma semana de aprendizado tão intensa. E sou muito grata **Labenu** . Não que eu tenha aprendido tudo ainda, porque foi muita informação. Amei saber que existe o terminal e dar alguns comandos nele, é muito útil. Até que enfim aprendi a diferença entre git/ github e gitbash e a pronunciar tambem, vocês não fazem idéia como eu pronunciava kkkkkkk. **Labenu** faz tudo, vou sair fluente no inglês aqui, eu tô sentindo.
