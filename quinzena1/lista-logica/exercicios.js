@@ -1,6 +1,6 @@
-// Exemplos
+// // Exemplos
 
-// Exercício 0A
+// // Exercício 0A
 function soma() {
   // escreva seu código aqui
   const num1 = prompt('Digite o primeiro número')
@@ -47,14 +47,11 @@ function calculaIMC() {
 }
 
 // Exercício 4
-function imprimeInformacoesUsuario() {
-  // escreva seu código aqui
-  let nome=  prompt ("Digite aqui seu nome:")
-  let idade =  prompt ("Digite aqui sua idade:")
-  let email =  prompt ("Digite aqui seu e-mail:")
-  console.log ("Meu nome é",nome,",tenho",idade,"anos,","e o meu email é",email)
-
+function imprimeInformacoesUsuario ( nome, idade, email) {
+console.log ('Meu nome é', nome, 'tenho', idade,'anos e o meu email é',email)
 }
+imprimeInformacoesUsuario ( "João", "25", "ajoao@gmail.com")
+
 
 // Exercício 5
 function imprimeTresCoresFavoritas() {

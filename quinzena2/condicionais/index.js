@@ -171,32 +171,169 @@
 
 
 
-let generoDoFilme = prompt( "Qual o gênero do filme?")
-let precoDoFilme = Number ( prompt( "Qual o valor do ingresso?"))
+// let generoDoFilme = prompt( "Qual o gênero do filme?")
+// let precoDoFilme = Number ( prompt( "Qual o valor do ingresso?"))
 
-// console.log (generoDoFilme, precoDoFilme)
+// // console.log (generoDoFilme, precoDoFilme)
 
 
-      function assistirFilme(
-        generoDoFilme,
-        precoDoFilme 
+//       function assistirFilme(
+//         generoDoFilme,
+//         precoDoFilme 
         
-        )
-    {
+//         )
+//     {
 
 
-            if (
-            (generoDoFilme === "Fantasia") &&
-            (precoDoFilme  >  15))
-            {
-            console.log ("Bom filme")
-             } else  {
-            console.log ("Escolha outro filme")
-             }
+//             if (
+//             (generoDoFilme === "Fantasia") &&
+//             (precoDoFilme  <  15))
+//             {
+//             console.log ("Bom filme")
+//              } else  {
+//             console.log ("Escolha outro filme")
+//              }
 
 
-    }
-     assistirFilme( generoDoFilme, precoDoFilme )
+//     }
+//      assistirFilme( generoDoFilme, precoDoFilme )
    
 
      
+
+     //DESAFIO
+
+
+
+     //1- Modifique o código do exercício 4 de escrita de código para, antes de imprimir a mensagem "Bom filme!", 
+     //pergunte ao usuário, pelo prompt qual lanchinho ele vai comprar (pipoca, chocolate, doces, etc) e imprima no 
+     //console as mensagens "Bom filme!" e "Aproveite o seu [LANCHINHO]", trocando [LANCHINHO] pelo que o usuário 
+     //colocou no input.
+
+
+    //  let generoDoFilme = prompt( "Qual o gênero do filme?")
+    //  let precoDoFilme = Number ( prompt( "Qual o valor do ingresso?"))
+     
+    //  // console.log (generoDoFilme, precoDoFilme)
+     
+     
+    //        function assistirFilme(
+    //          generoDoFilme,
+    //          precoDoFilme 
+             
+    //          )
+    //      {
+    //             if (
+    //              (generoDoFilme === "Fantasia") &&
+    //              (precoDoFilme  <  15))
+    //              {
+    //              let snack = prompt ("Qual lanchinho você quer comprar?")
+    //              console.log ("Bom filme! E aproveite o seu", snack)
+    //             //  console.log ("Bom filme")
+    //               } else  {
+    //              console.log ("Escolha outro filme")
+    //               }
+     
+     
+    //      }
+    //       assistirFilme( generoDoFilme, precoDoFilme )
+        
+//______________________________________________________________________________________________________
+
+          //2- Você foi contratado para criar um sistema de vendas 
+          //de ingressos de jogos de um estádio de futebol. Para esta compra, 
+          //o usuário deve fornecer algumas informações:
+
+
+          // nome completo
+
+          // tipo de jogo: IN indica internacional; 
+          //e DO indica doméstico;
+
+          //Categoria: pode ser as opções 1, 2, 3 ou 4
+
+          //quantidade de ingressos
+
+
+          //O seu sistema deve solicitar estas informações ao usuário, através do prompt . Além disso, 
+          //ele deve imprimir tudo isso, junto com o valor de cada ingresso e o valor total que o usuário 
+          //tem que pagar (ou seja, o valor unitário do ingresso multiplicado pela quantidade). Abaixo,
+          //há a tabela com os valores de cada ingresso e exemplos de execução do programa. Lembrando
+          //que o valor de jogos internacionais é o mesmo de jogos domésticos, mas seus preços devem 
+          //ser multiplicados pelo valor do dólar (considerar o dólar = R$4,10)
+
+          // ---Dados da compra--- 
+          //   Nome do cliente:  Soter Padua 
+          //   Tipo do jogo:  Nacional 
+          //   Etapa do jogo:  Final 
+          //   Categoria:  1 
+          //   Quantidade de Ingressos:  10 ingressos 
+          //   ---Valores--- 
+          //   Valor do ingresso:  R$ 1980
+          //   Valor total:  R$ 19800
+          //   SF
+
+  let nome = prompt("Digite aqui seu nome :");
+  let tipoDoJogo = prompt(" Digite aqui o tipo do jogo :  IN - para jogo  internacional e DO -para jogo doméstico: ");
+  let etapaDoJogo = prompt("Digite aqui a etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final:");
+  let categoria = prompt("Digite aqui qual categoria dessas : 1-2-3-4 : ");
+  let quantidadeDeIngressos = Number(prompt("Digite aqui a quantidade de ingressos:"));
+  let preco;
+  let tipoDoJogoExtenso = 'Doméstico'
+
+  if (etapaDoJogo === "SF") {
+    if (categoria === "1") {
+      preco = 1320;
+    } else if (categoria === "2") {
+      preco = 880.00;
+    } else if (categoria === "3") {
+      preco = 550.00;
+    } else if (categoria === "4") {
+      preco = 220.00;
+    }
+  } else if (etapaDoJogo === "DT") {
+    if (categoria === "1") {
+      preco = 660.00;
+    } else if (categoria === "2") {
+      preco = 440.00;
+    } else if (categoria === "3") {
+      preco = 330.00;
+    } else if (categoria === "4") {
+      preco = 170.00;
+    }
+  } else if (etapaDoJogo === "FI") {
+    if (categoria === "1") {
+      preco = 1980.00;
+    } else if (categoria === "2") {
+      preco = 1320.00;
+    } else if (categoria === "3") {
+      preco = 880.00;
+    } else if (categoria === "4") {
+      preco = 330.00;
+    }
+  }
+
+  if (tipoDoJogo === "IN") {
+    preco = preco * 4.20;
+    tipoDoJogoExtenso = 'Internacional'
+  }
+
+  let valorTotal = (preco * quantidadeDeIngressos);
+
+
+
+  console.log("DADOS DA COMPRA");
+  console.log("Nome do cliente", nome);
+  console.log("Tipo do jogo", tipoDoJogoExtenso);
+  console.log("Etapa do jogo", etapaDoJogo);
+  console.log("Categoria", categoria);
+  console.log("Quantidade de ingressos", quantidadeDeIngressos);
+  console.log(" -------VALORES------");
+  console.log("Valor do ingresso:", preco);
+  console.log("Valor total:", valorTotal);
+
+
+}
+
+
+calcularValorIngresso();
