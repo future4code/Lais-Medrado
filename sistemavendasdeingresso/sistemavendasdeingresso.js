@@ -33,67 +33,69 @@
 
           //____________________________________________________________________________
 
-          let nome = prompt("Digite aqui seu nome :");
-          let tipoDoJogo = prompt(" Digite aqui o tipo do jogo :  IN - para jogo  internacional e DO -para jogo doméstico: ");
-          let etapaDoJogo = prompt("Digite aqui a etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final:");
-          let categoria = prompt("Digite aqui qual categoria dessas : 1-2-3-4 : ");
-          let quantidadeDeIngressos = Number(prompt("Digite aqui a quantidade de ingressos:"));
-          let preco;
-          let tipoDoJogoExtenso = 'Doméstico'
+        //   let nome = prompt("Digite aqui seu nome :");
+        //   let tipoDoJogo = prompt(" Digite aqui o tipo do jogo :  IN - para jogo  internacional e DO -para jogo doméstico: ");
+        //   let etapaDoJogo = prompt("Digite aqui a etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final:");
+        //   let categoria = prompt("Digite aqui qual categoria dessas : 1-2-3-4 : ");
+        //   let quantidadeDeIngressos = Number(prompt("Digite aqui a quantidade de ingressos:"));
+        //   let preco;
+        //   let tipoDoJogoExtenso = 'Doméstico'
         
-          if (etapaDoJogo === "SF") {
-            if (categoria === "1") {
-              preco = 1320;
-            } else if (categoria === "2") {
-              preco = 880.00;
-            } else if (categoria === "3") {
-              preco = 550.00;
-            } else if (categoria === "4") {
-              preco = 220.00;
-            }
-          } else if (etapaDoJogo === "DT") {
-            if (categoria === "1") {
-              preco = 660.00;
-            } else if (categoria === "2") {
-              preco = 440.00;
-            } else if (categoria === "3") {
-              preco = 330.00;
-            } else if (categoria === "4") {
-              preco = 170.00;
-            }
-          } else if (etapaDoJogo === "FI") {
-            if (categoria === "1") {
-              preco = 1980.00;
-            } else if (categoria === "2") {
-              preco = 1320.00;
-            } else if (categoria === "3") {
-              preco = 880.00;
-            } else if (categoria === "4") {
-              preco = 330.00;
-            }
-          }
+        //   if (etapaDoJogo === "SF") {
+        //     if (categoria === "1") {
+        //       preco = 1320;
+        //     } else if (categoria === "2") {
+        //       preco = 880.00;
+        //     } else if (categoria === "3") {
+        //       preco = 550.00;
+        //     } else if (categoria === "4") {
+        //       preco = 220.00;
+        //     }
+        //   } else if (etapaDoJogo === "DT") {
+        //     if (categoria === "1") {
+        //       preco = 660.00;
+        //     } else if (categoria === "2") {
+        //       preco = 440.00;
+        //     } else if (categoria === "3") {
+        //       preco = 330.00;
+        //     } else if (categoria === "4") {
+        //       preco = 170.00;
+        //     }
+        //   } else if (etapaDoJogo === "FI") {
+        //     if (categoria === "1") {
+        //       preco = 1980.00;
+        //     } else if (categoria === "2") {
+        //       preco = 1320.00;
+        //     } else if (categoria === "3") {
+        //       preco = 880.00;
+        //     } else if (categoria === "4") {
+        //       preco = 330.00;
+        //     }
+        //   }
         
-          if (tipoDoJogo === "IN") {
-            preco = preco * 4.20;
-            tipoDoJogoExtenso = 'Internacional'
-          }
+        //   if (tipoDoJogo === "IN") {
+        //     preco = preco * 4.20;
+        //     tipoDoJogoExtenso = 'Internacional'
+        //   }
         
-          let valorTotal = (preco * quantidadeDeIngressos);
-        
-        
-        
-          console.log("DADOS DA COMPRA");
-          console.log("Nome do cliente", nome);
-          console.log("Tipo do jogo", tipoDoJogoExtenso);
-          console.log("Etapa do jogo", etapaDoJogo);
-          console.log("Categoria", categoria);
-          console.log("Quantidade de ingressos", quantidadeDeIngressos);
-          console.log(" -------VALORES------");
-          console.log("Valor do ingresso:", preco);
-          console.log("Valor total:", valorTotal);
+        //   let valorTotal = (preco * quantidadeDeIngressos);
         
         
-        }
+        
+        //   console.log("DADOS DA COMPRA");
+        //   console.log("Nome do cliente", nome);
+        //   console.log("Tipo do jogo", tipoDoJogoExtenso);
+        //   console.log("Etapa do jogo", etapaDoJogo);
+        //   console.log("Categoria", categoria);
+        //   console.log("Quantidade de ingressos", quantidadeDeIngressos);
+        //   console.log(" -------VALORES------");
+        //   console.log("Valor do ingresso:", preco);
+        //   console.log("Valor total:", valorTotal);
         
         
-        calcularValorIngresso();
+        // }
+        
+        
+        // calcularValorIngresso();
+
+
