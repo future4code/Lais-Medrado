@@ -1,0 +1,47 @@
+
+.texto-principal {
+
+        /* width: 100px;  */
+        text-align: center 
+    }
+.texto-principal h1 {
+    
+    
+    font-size: 6 px;
+    
+	
+  }
+
+.texto-principal h1 strong{
+   
+		display: block;
+		font-size: 200px;
+		font-family: Brush Script MT;
+        
+      
+}
+
+.subtitulo {
+   
+		
+    font-size: 20px;
+     margin : -15px
+    color: rgb(255, 51, 51);
+    
+}
+
+.links {
+
+    font-size: 2 px;
+    font-family: Arial ;
+    color: rgb(0, 0, 0);
+    margin: 50px 400px;
+}
+
+.info { 
+
+    font-size: 20px;
+    color:rgb(119, 20, 20);
+
+    text-align: center 
+}
