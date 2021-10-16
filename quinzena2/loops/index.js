@@ -75,13 +75,76 @@
 //c) Por fim, imprima o array com os nomes dos bichinhos no console
 
 
-let animal = Number(prompt("Quantos bichinhos de estimação você tem ?"))
-while( animal === 0) {
-            console.log("Que pena! Você pode adotar um pet!")
-        if (animal > 0){
-            let nome = prompt("Digite o nome de seus cachorrinhos:")
-            console.log (nome)
-        }
-    }
+// let animal = Number(prompt("Quantos bichinhos de estimação você tem ?"))
+// while( animal === 0) {
+//             console.log("Que pena! Você pode adotar um pet!")
+//         if (animal > 0){
+//             let nome = prompt("Digite o nome de seus cachorrinhos:")
+//             console.log (nome)
+//         }
+//     }
 
-    animal()
+//     animal()
+
+
+//_________________________________________________________________________________
+
+
+// function inverteArray(array) {
+//     let meuArray = [0, 8, 23, 16, 10, 15, 41, 12, 13] 
+//     let meuArrayInvertido = meuArray.map(function (item, indice, array){
+//        return array[array.length - indice - 1];
+//      });
+   
+//      console.log (meuArrayInvertido)
+//    }
+
+//    inverteArray()
+
+
+
+// function retornaNumerosParesElevadosADois(array) {
+//     const numeros=[1,2,3,4,5,6]
+//     const quadrados = numeros.map(function(item ){
+//     return Math.pow(item, 2)
+//     })
+
+//  console.log(quadrados)
+// }
+
+
+
+//    retornaNumerosParesElevadosADois()
+
+
+// const filtraGrama = (pokemon, index) => {
+//     return pokemon.tipo === "grama"
+// }
+
+// const pokemonsGrama = pokemons.filter(filtraGrama)
+
+
+
+
+// 2o jeito - usando arrow function
+// const produtosLimpeza = produtos.filter((item) => {
+//     return item.categoria === "Limpeza"
+// })
+
+// const nomesPordutosLimpeza = produtosLimpeza.map((item) => {
+//     return item.nome
+// })
+// console.log(nomesPordutosLimpeza)
+
+function inverteArray(array) {
+
+
+    let arrayInvertido =[]
+    for (let i = array.length-1; i>=0 ; i-- ){
+    arrayInvertido.push(array[i])
+    }
+  
+       return arrayInvertido
+    
+    }
+console.log (arrayInvertido[0, 8, 23, 16, 10, 15, 41, 12, 13] )
