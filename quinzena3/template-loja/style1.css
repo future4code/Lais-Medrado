@@ -32,10 +32,12 @@
 
 .links {
 
-    font-size: 2 px;
+    font-size: 10 px;
     font-family: Arial ;
-    color: rgb(0, 0, 0);
-    margin: 50px 400px;
+    text-align: center ;
+    color: black;
+   width : 100%;
+    background-color: rgb(147, 136, 218);
 }
 
 .info { 
@@ -44,4 +46,31 @@
     color:rgb(119, 20, 20);
 
     text-align: center 
+}
+
+
+.icones {
+    
+    text-align: center 
+    color rgb(119, 20, 20);
+}
+
+
+#follow {
+
+
+    text-align: center 
+}
+
+
+.footer {
+ background-color: rgb(147, 136, 218);
+    text-align: center  
+    
+}
+
+.endereco {
+
+    text-align: center 
+
 }
