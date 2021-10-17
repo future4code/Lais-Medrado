@@ -1,0 +1,185 @@
+
+
+
+body{
+    margin: 0 ;
+}
+
+
+.titulo {
+
+    font-size: 70px;
+		font-family: Brush Script MT;
+        color:  rgb(171, 162, 230);
+        text-align: center;
+        margin: -40px;
+}
+
+
+#link1 {
+
+    color: rgb(255, 255, 255);
+    
+    }
+    
+#link2 {
+    
+        color: rgb(255, 255, 255);
+        
+        }
+        
+    
+#link3 {
+    
+            color: rgb(255, 255, 255);
+            
+            }
+    
+    
+    
+#link4 {
+    
+                color: rgb(255, 255, 255);
+                
+                }
+                
+a:link {
+    text-decoration:none;
+    margin : 50px;
+    color: rgb(255, 255, 255);  }
+
+
+    .links {
+        padding: 5vh; 
+        
+           font-size: 10 px;
+           font-family: Arial ;
+           text-align: center ;
+           
+          width : 95vw;
+          margin: 0;
+           background-color: rgb(171, 162, 230);
+       }
+
+
+
+ .funcionarios 
+{
+   margin-left: 10px;
+   text-align: center;
+    font-family: Arial ;
+    font-size: 25px;
+
+
+    
+}
+
+
+.tabela {
+
+   text-align: center;
+
+  
+   
+}
+#linha1 {
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: Arial ;   
+    padding: -2px -2px;
+     background-color:  rgb(171, 162, 230);
+     width: 200px;
+    }
+    
+    
+    #linha2 {
+    margin: 0 auto;   
+    font-size: 15px;
+    font-family: Arial ; 
+    padding: -2px -2px;
+     background-color:  rgb(171, 162, 230); 
+     margin: 0 auto;
+     width: 200px;
+    }
+    
+     #linha3 {
+    margin: 0 auto;  
+    width: 200px;
+
+    font-size: 15px;
+    font-family: Arial ; 
+    
+    padding: -2px -2px;
+     background-color:  rgb(171, 162, 230); 
+    
+    }
+    
+   
+    #linha4 {
+
+    margin: 0 auto;  
+    width: 200px;
+
+        font-size: 15px;
+        font-family: Arial ; 
+        
+        padding: -2px -2px;
+         background-color:  rgb(171, 162, 230); 
+        
+        }
+
+
+        #linha5 {
+            margin: 0 auto;  
+            width: 200px;
+
+            font-size: 15px;
+            font-family: Arial ; 
+            
+            padding: -2px -2px;
+             background-color:  rgb(171, 162, 230); 
+            
+            }
+    
+    
+  
+            #linha6 {
+                margin: 0 auto;  
+                width: 200px;
+                font-size: 15px;
+                font-family: Arial ; 
+                
+                padding: -2px -2px;
+                 background-color:  rgb(171, 162, 230); 
+                
+                }
+        
+      
+.footer {
+    
+    color: cornsilk;
+    padding: .1vh; 
+    width : 101%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(143, 132, 212);
+    text-align: center ; 
+     
+}
+
+
+
+
+#titulo-footer {
+    
+    color: rgb(255, 255, 255);
+    font-family: Brush Script MT;
+   margin:2px
+}
+
+
+  
+      
+               
+                
+                

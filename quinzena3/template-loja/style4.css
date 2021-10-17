@@ -1,0 +1,161 @@
+body{
+    margin: 0 ;
+}
+
+
+.titulo {
+
+    font-size: 70px;
+		font-family: Brush Script MT;
+        color:  rgb(171, 162, 230);
+        text-align: center;
+        margin-left: 100px;
+}
+
+
+.subtitulo 
+{
+   margin-left: 100px;
+   text-align: center;
+    font-family: Arial ;
+    font-size: 25px;
+
+
+    
+}
+
+
+#link1 {
+
+    color: rgb(255, 255, 255);
+    
+    }
+    
+#link2 {
+    
+        color: rgb(255, 255, 255);
+        
+        }
+        
+    
+#link3 {
+    
+            color: rgb(255, 255, 255);
+            
+            }
+    
+    
+    
+#link4 {
+    
+                color: rgb(255, 255, 255);
+                
+                }
+                
+a:link {
+    text-decoration:none;
+    margin : 50px;
+    color: rgb(255, 255, 255);  }
+
+
+    .links {
+        padding: 5vh; 
+        
+           font-size: 10 px;
+           font-family: Arial ;
+           text-align: center ;
+           
+          width : 95vw;
+          margin: 0;
+           background-color: rgb(171, 162, 230);
+       }
+
+       .primeira {
+          text-align: left;
+           
+        margin-left: 500px;
+        font-size: 25px;
+        font-family: Arial ;   
+        
+          }
+          .segunda {
+            text-align: left;
+            margin-left: 500px;
+         font-size: 25px;
+         font-family: Arial ;   
+         
+           }
+         
+           .terceira {
+            text-align: left;
+         margin-left: 500px;
+         font-size: 25px;
+         font-family: Arial ;   
+         
+           }
+           .quarta {
+        text-align: left;
+         margin-left: 500px;
+         font-size: 25px;
+         font-family: Arial ;   
+         
+           }
+           .form-add {
+           text-align: right;
+           margin-right: 390px;
+           font-size: 25px;
+           font-family: Arial ;
+
+           }
+
+
+           .inputinho1 {
+               width: 300px;
+
+           }
+
+           
+           .inputinho2 {
+            width: 212px;
+
+        }
+
+        .inputinho3 {
+            width: 203px;
+
+        }
+
+
+        .inputinho4 {
+            width: 289px;
+
+        }
+
+
+    
+        .footer {
+    
+            color: cornsilk;
+            padding: .1vh; 
+            width : 101%;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+         background-color: rgb(143, 132, 212);
+            text-align: center ; 
+             
+        }
+        
+        
+        
+        
+        #titulo-footer {
+            
+            color: rgb(255, 255, 255);
+            font-family: Brush Script MT;
+           margin:2px
+        }
+        
+        
+          
+              
+              

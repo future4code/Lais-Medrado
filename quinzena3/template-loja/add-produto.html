@@ -5,43 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
 </head>
 <body>
-    <div>
-        <p>Nome da lojinha</p>
-    </div>
-    
-    <div>
-        <a href="index.html">Página Inicial</a>      
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+
+    <div class ="links"> 
+        <a id ="link1" href="index.html">Página Inicial</a>      
+        <a id= "link2" href="ctrl-estoque.html">Controle de Estoque</a>
+        <a id="link3" href="add-produto.html">Adicionar Produto</a>
+        <a id = "link4" href="funcionarios.html">Funcionários</a>
     </div>
 
+    <div class= "titulo">
+        <p>Pet Cat</p>
+    </div>
     
-    <h2>Adicionar Produto</h2>
+    
+   
+
+    
+    <h2 class="subtitulo">Adicionar Produto</h2>
     <form action="">
-        <div>
+        <div class="primeira">
             <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
+            <input class="inputinho1" type="url" id="link-foto" name="link-foto">
         </div>
         
-        <div>
+        <div class="segunda">
             <label for="descricao">Descrição do produto: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="descrição" name="descrição">
+            <input class="inputinho2" type="text" id="descrição" name="descrição">
         </div>
         
-        <div>
+        <div class="terceira">
             <label for="preco">Preço (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="number" id="preço" name="preço">
+            <input class = "inputinho4"type="number" id="preço" name="preço">
         </div>
         
-        <div>
+        <div class="quarta">
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
             <label for = "Quantidade disponível">Quantidade disponível: </label>
-            <input type= "number" id= "Quantidade disponível" name= "Quantidade disponível">
+            <input class="inputinho3"type= "number" id= "Quantidade disponível" name= "Quantidade disponível">
         </div>
 
         <div class="form-add">
@@ -50,6 +55,19 @@
         </div>
 
     </form>
+<br>
+<br>
+    <div class = "footer" >
+
+        <h2 id ="titulo-footer">  Pet Cat </h2>
+        
+        <p>Endereço: 
+            Rua prediliano Pita, Garcia. Salvador-Ba</p>
+        <p class = "contato" > Contato :
+            Telefone: (71) 12569-5862 / Whatsapp : (71) 98752-6589 
+        </p>
+
+
 
 </body>
 </html>
