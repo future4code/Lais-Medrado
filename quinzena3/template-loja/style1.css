@@ -1,60 +1,130 @@
 
+.retangulo{
+
+    
+    width: 55vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin : 0 auto;
+    opacity: .85;
+
+}
+
+
+
+body{
+    margin: 0 ;
+}
+
+.fundo{
+    margin:0;
+ width: 100vw;
+ height: 100vh;
+ background:url(fundocat2.jpg);
+ /* background-size: cover;  */
+
+}
+
 .texto-principal {
 
         /* width: 100px;  */
-        text-align: center 
+        text-align: center ;
+        opacity:100
+        
     }
 .texto-principal h1 {
-    
-    
-    font-size: 6 px;
-    
-	
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(0, 0, 0);
   }
 
 .texto-principal h1 strong{
    
-		display: block;
-		font-size: 200px;
+		
+		font-size: 250px;
 		font-family: Brush Script MT;
-        
-      
+        color:  rgb(171, 162, 230);
+      opacity: 1;
 }
 
 .subtitulo {
    
 		
     font-size: 20px;
-     margin : -15px
-    color: rgb(255, 51, 51);
+    font-family: Arial, Helvetica, sans-serif;
+     margin : -30px
+    
     
 }
 
 .links {
-
+ padding: 5vh; 
+ 
     font-size: 10 px;
     font-family: Arial ;
     text-align: center ;
-    color: black;
-   width : 100%;
-    background-color: rgb(147, 136, 218);
+    
+   width : 95vw;
+   margin: 0;
+    background-color: rgb(171, 162, 230);
 }
 
 .info { 
 
     font-size: 20px;
-    color:rgb(119, 20, 20);
-
+    color:rgb(255, 55, 55);
+    margin : 35px;
     text-align: center 
 }
 
+#link1 {
 
-.icones {
+color: rgb(255, 255, 255);
+
+}
+
+#link2 {
+
+    color: rgb(255, 255, 255);
     
-    text-align: center 
-    color rgb(119, 20, 20);
-}
+    }
+    
 
+#link3 {
+
+        color: rgb(255, 255, 255);
+        
+        }
+
+
+
+#link4 {
+
+            color: rgb(255, 255, 255);
+            
+            }
+            
+    
+        
+
+
+a:link {
+    text-decoration:none;
+    margin : 40px;
+    color: rgb(255, 255, 255);  }
+
+#ima1{
+padding-left: 10px;
+;
+}
+#ima2{
+padding-left: 30px;
+}
+#ima3{
+padding-left: 30px;
+}
+            
+    
 
 #follow {
 
@@ -64,13 +134,23 @@
 
 
 .footer {
- background-color: rgb(147, 136, 218);
-    text-align: center  
     
+    color: cornsilk;
+    padding: .1vh; 
+    width : 101%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(143, 132, 212);
+    text-align: center ; 
+     
 }
 
-.endereco {
 
-    text-align: center 
 
+
+#titulo-footer {
+    
+    color: rgb(255, 255, 255);
+    font-family: Brush Script MT;
+   margin:-10px
 }
