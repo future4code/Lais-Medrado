@@ -218,3 +218,6 @@ td button {
     text-decoration: none;
 }
 
+.footer {
+    display: none;
+}
