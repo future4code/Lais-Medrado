@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icone-e-texto {
+    display: flex ;
+    align-items: center;
+}
+
+.botao-de-busca {
+
+    width: 100px;
+    height: 30px;
+    padding-right: 30px;
+    margin-right: 45px;
+}
+
+header {
+    background-color: rgb(226, 123, 26);
+    display: flex;
+    /* justify-content cuida do eixo principal */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    height: 80px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px ;
+    margin: 12px 70px;
+    flex-grow: 100;
+    
+}
+
+
+
+.card-produto {
+    
+    display: flex;
+    flex-direction: column;
+     height: 260px;
+    align-items: center;
+    /* text-align: center; */
+    box-shadow: 2px 2px 5px darkgray
+}
+
+.titulo-card {
+    margin-top: 40px;
+    margin-right: 220px;
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+
+}
+
+
+
+
+.filme {
+    width: 100%;
+}
+
+
+footer {
+
+    margin-top: 0px;
+    height: 80px;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgb(226, 123, 26);
+    display: flex;
+    align-items: center;
+   
+}
