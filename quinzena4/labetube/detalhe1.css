@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.texto {
+    display: flex ;
+    align-items: center;
+}
+
+.botao-de-busca {
+
+    width: 70px;
+    height: 30px;
+    padding-right: 180px;
+    margin-right: 45px;
+    border: none;
+}
+
+header {
+    background-color: rgb(226, 123, 26);
+    display: flex;
+    /* justify-content cuida do eixo principal */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px ;
+    flex-grow: 100;
+    
+}
+
+
+.titulo-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.filme {
+display: flex;
+ width: 1100px;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+footer {
+
+    margin-top: 50px;
+    height: 80px;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgb(226, 123, 26);
+    display: flex;
+    align-items: center;
+   
+}
