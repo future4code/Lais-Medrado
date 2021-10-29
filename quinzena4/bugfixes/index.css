@@ -1,0 +1,223 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 0px 5px 10px 5px;
+    color: white;
+    text-align: center;
+
+
+}
+
+#container-de-descricao  { 
+    font-size: 15px;
+     font-family: tahoma;
+    padding:  50px;
+   }
+
+li{
+    
+       width: 200px;
+        margin: auto;
+    }
+    
+h3{
+
+    font-size: 15px;
+     
+}
+
+
+
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: .5px solid #000000;
+    height: 20px;
+    width: 350px;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+ .icone{
+
+width: 13px;
+
+
+ }
+div>p:first-child {
+    display: inline;
+}
+
+div img {
+    background: rgb(255, 255, 255);
+}
+
+.botao-amarelo {
+    
+display: block;
+text-align: center;
+
+margin: 100px  auto;
+border: none;
+    
+background-color: #ffaf43;
+   
+width: 170px;
+height: 25px;
+border-radius: 5px;
+   
+font-size: 15px;
+color: white;
+  
+} 
+
+
+
+
+
+.botao-amarelo:hover {
+
+ 
+background-color: #c44f00;
+    
+}
+
+.container {
+    
+    height: 500px;
+    text-align: center;
+}
+
+.icone {
+    height: 15px;
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+
+
+ 
+#container-de-descricao {
+    
+    
+    background-color: #2274a5;
+    height: 200px;
+    
+    color: white;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+}
+
+#container-para-comprar {
+    padding: 70px;
+    height: 150px;
+    
+    font-family: tahoma;
+    
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 35px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    font-family: arial;
+   font-weight: 550;
+   margin: 0 auto ;
+    padding: 0px;
+}
+
+td {
+
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+
+tr {
+
+
+    margin: 0 auto;
+}
+td button {
+    font-family: arial;
+    font-weight: 650;
+    margin: 0 auto;
+    background-color: #fadf63;
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    display: block;
+    text-align: center;
+    margin: 100px  auto;
+    
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+   
+    background-color: #635a3d;
+    text-decoration: none;
+}
+
+.footer {
+    display: none;
+}
