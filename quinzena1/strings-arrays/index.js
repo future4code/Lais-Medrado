@@ -178,3 +178,26 @@
 
 
 // console.log ( "índice de abacaxi:", indiceLisDeFrutas, " Tamanho da lista:", tamanhoDaLista)
+
+
+
+// Considere um array com o seguinte formato:
+
+[
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+
+//a) Faça uma função que retorne um novo array só com os adultos (pessoas com idade igual ou superior a 18)
+
+
+const  maiorDe18 = (arrayDepessoas) => {
+const arrayDeAdultos = arrayDepessoas.filter((item) => {
+    return item.idade >= 18 }) 
+    return arrayDeAdultos
+}
+
+console.log(arrayDeAdultos)
