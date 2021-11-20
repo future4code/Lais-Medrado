@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Post from './components/Post/Post';
 
 
+
 const MainContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -11,31 +12,46 @@ const MainContainer = styled.div`
 `
 
 class App extends React.Component {
-  render() {
-    return (
-      <MainContainer>
-        <Post
-          nomeUsuario={'paulinha'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/155'}
-        />
-         <Post
-          nomeUsuario={'Laís'}
-          fotoUsuario={'https://picsum.photos/50/30'}
-          fotoPost={'https://picsum.photos/200/156'}
-        />
-        
-         <Post
-          nomeUsuario={'Helena'}
-          fotoUsuario={'https://picsum.photos/50/40'}
-          fotoPost={'https://picsum.photos/200/157'}
-        />
+ state = {
 
+ pessoas : [
 
-      </MainContainer>
-      
-    );
-  }
+{
+  nomeUsuario:'paulinha',
+  fotoUsuario :'https://picsum.photos/50/50',
+  fotoPost : 'https://picsum.photos/200/155'
+},
+{
+  nomeUsuario:'Laís',
+  fotoUsuario:'https://picsum.photos/50/30',
+  fotoPost: 'https://picsum.photos/200/156'
+},
+{
+nomeUsuario:'Helena',
+fotoUsuario:'https://picsum.photos/50/40',
+fotoPost:'https://picsum.photos/200/157'
 }
+]
+}
+
+render( ) {
+   const listaDePessoas = this.state.pessoas.map((pessoa) => {
+
+        return (
+
+          <div>
+            <div>{listaDePessoas}</div>
+          </div>
+
+     
+      
+               )
+        }
+        })
+          }
+
+
+
+
 
 export default App;
