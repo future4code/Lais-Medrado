@@ -26,17 +26,15 @@ class App extends React.Component {
   };
 
   adicionaMensagem = () => {
-    // Colocamos em uma variavel o objeto que representa uma nova pessoa
     const novaMensagem = {
-      // Puxamos da variavel de estado "valorInputPessoa" o nome dela
-      nome: this.state.valorInputNome,
-      // Puxamos da variavel de estado "valorInputEmail" o email dela
-      conteudo: this.state.valorInputConteudo
+    nome: this.state.valorInputNome,
+    conteudo: this.state.valorInputConteudo
     };
-
+   
+   
     // Copia array de pessoas e adiciona uma pessoa no final
     const maisNovasMensagens= [...this.state.mensagens, novaMensagem];
-
+    this.setState({valorInputConteudo: ""});
     // Define o estado "pessoas" como a variavel "novoPessoas"
     this.setState({ mensagens: maisNovasMensagens });
   };
@@ -63,7 +61,7 @@ class App extends React.Component {
     // Mesma lógica do Exemplo 5
     const listaDeComponentes = this.state.mensagens.map((mensagem) => {
       return (
-        <p onfocus="this.value='';"> 
+        <p> 
           {mensagem.nome}  {mensagem.conteudo} 
         </p>
       );
@@ -74,7 +72,7 @@ class App extends React.Component {
         
         <div>
           <input
-          
+       
             value={this.state.valorInputNome}
             onChange={this.onChangeInputNome}
             placeholder={"Nome"}
