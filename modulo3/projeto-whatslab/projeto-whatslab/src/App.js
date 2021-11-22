@@ -1,16 +1,79 @@
 import React from 'react';
-
-
-import logo from './logo.svg';
-
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 
 
+const Tela2 = styled.div `
+display: flex;
 
+flex-direction: column-reverse;
+height: 100vh;
+width:30em;
+/* align-items: center; */
+background-color: lightpink;
+flex-wrap: nowrap;
+
+`
+
+
+const InputNome = styled.input `
+
+width: 16em;
+height: 3em;
+
+`
+
+
+const InputConteudo = styled.input `
+
+width: 12.5em;
+height: 3em;
+`
+
+
+const Button = styled.button`
+
+width: 6.2em;
+height: 3.45em;
+
+`
+const Negrito = styled.div`
+
+font-weight: 900;
+
+`
+
+const Tela = styled.div `
+
+display: flex; 
+
+
+/* flex-direction:column;
+align-items: center; */
+justify-content: center;
+
+height: 100vh;
+width: 100%;
+background-color: lightyellow;
+
+
+`
+
+
+const BalaoDeMensagem = styled.input`
+
+background-color: ${props => {
+        if (props.tipo === "eu") {
+            return "#DDF7C8" // Verde copiado do WhatsApp
+        } else if (props.tipo === "outro") {
+            return "#ffffff" // Branco
+        }
+    }};
+`
 
 
 class App extends React.Component {
+
   state = {
     // Array inicializado da mesma forma que no Exemplo 5
     mensagens: [
@@ -57,42 +120,52 @@ class App extends React.Component {
     this.setState({ valorInputConteudo: event.target.value });
   };
 
-  render() {
     // Mesma lógica do Exemplo 5
+
+
+
+render() {
+
+
     const listaDeComponentes = this.state.mensagens.map((mensagem) => {
       return (
         <p> 
-          {mensagem.nome}  {mensagem.conteudo} 
+          <Negrito>{mensagem.nome}</Negrito>  {mensagem.conteudo} 
         </p>
       );
     });
 
+   
     return (
-      <div>
+
+      
+      <Tela>
+        <Tela2>
         
         <div>
-          <input
+          <InputConteudo
        
             value={this.state.valorInputNome}
             onChange={this.onChangeInputNome}
-            placeholder={"Nome"}
+            placeholder={"nome"}
             
           />
-          <input
-            
+       
+          <InputNome
             value={this.state.valorInputConteudo}
             
             onChange={this.onChangeInputConteudo}
-            placeholder={"Conteúdo"}
+            placeholder={"conteudo"}
+            />
             
-          />
-          <button onClick={this.adicionaMensagem}>Enviar</button>
+
+          <Button
+           onClick={this.adicionaMensagem}>Enviar</Button> 
         </div> 
         <div>{listaDeComponentes}</div>
-      </div>
+        </Tela2>
+      </Tela>
       
-  )
-  }
-}
-
+    )
+}}
 export default App;
