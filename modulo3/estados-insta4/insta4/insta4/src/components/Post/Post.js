@@ -49,11 +49,23 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
-    this.setState({
-    numeroCurtidas : !this.state.numeroCurtidas + 1
+      let curtidas 
+      if (this.state.curtido) {
+      curtidas = this.state.numeroCurtidas - 1
+      }else {
+
+      curtidas = this.state.numeroCurtidas + 1
+
+   }
+
+  this.setState({
+
+      curtido: !this.state.curtido,
+      numeroCurtidas : curtidas
+    })
+    }
     
-  })
-}
+  
 
   onClickComentario = () => {
     this.setState({
@@ -83,7 +95,7 @@ class Post extends React.Component {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
     }
 
-    return <PostContainer>
+    return (<PostContainer>
       <PostHeader>
         <UserPhoto src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
         <p>{this.props.nomeUsuario}</p>
@@ -106,6 +118,7 @@ class Post extends React.Component {
       </PostFooter>
       {componenteComentario}
     </PostContainer>
+    );
   }
 }
 
