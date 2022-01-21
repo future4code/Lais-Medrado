@@ -7,8 +7,8 @@ function AdminHomePage() {
     return (
   
       <div> AdminHomePage
-      <BUTTON>VOLTAR</BUTTON>
-      <BUTTON>CRIAR </BUTTON>
+      <button>VOLTAR</button>
+      <button>CRIAR </button>
       </div>
      
     )

@@ -3,6 +3,7 @@ import axios from "axios";
 import styled from "styled-components"
 import Main from "./components/Main/Main";
 import ResetButton from "./components/ResetButton/ResetButton"
+import ChooseProfilePage from "./components/ChooseProfilePage/ChooseProfilePage";
 
 
 
@@ -17,6 +18,8 @@ function App() {
 <div>
  <Main/>
  <ResetButton/>
+ 
+ 
  </div>
 
   )

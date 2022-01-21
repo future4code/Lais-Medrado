@@ -1,14 +1,19 @@
 import React from "react";
 
 
-function Main() {
+function ResetButton() {
 
     return (
   
-      <div> Main</div>
+      <div> 
+        
+        <button>Resetar curtidas e matches</button>
+        
+        
+      </div>
     )
     
   }
   
-  export default Main;
+  export default ResetButton;
   

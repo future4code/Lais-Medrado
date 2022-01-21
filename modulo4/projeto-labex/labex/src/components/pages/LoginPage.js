@@ -1,15 +1,34 @@
 //Para fazermos login como administrador
 import React from 'react'
-import AdminHomePage from './AdminHomePage';
+import { useHistory } from "react-router-dom";
+
+
 
 function LoginPage() {
+const history = useHistory();
+
+const goBack =() => {
+  history.goBack()
+}
+
+
+
   return (
     <div>
-        <butto>VOLTAR</butto>
-        <butto>ENTRAR onClick= {AdminHomePage}</butto>
-      <HomePage/>
-    </div>
-  );
-}
+
+<form>
+  <label>
+   EMAIL:
+    <input type="text" name="name" />
+    SENHA:
+    <input type="text" name="name" />
+  </label>
+    </form>
+            <button onClick= {goBack}>VOLTAR</button>
+            <button>ENTRAR </button>
+          
+        </div>
+      );
+    }
 
 export default LoginPage;

@@ -1,12 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import  Router  from './components/pages/route/Router';
 
-function App() {
+
+
+
+ function App() {
   return (
-    <div>
-      <HomePage/>
-    </div>
+    
+    <Router/>
+
+
+    
   );
 }
 
 export default App;
+
