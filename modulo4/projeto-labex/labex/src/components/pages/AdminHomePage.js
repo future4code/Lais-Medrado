@@ -1,6 +1,10 @@
 // Para o administrador ver a lista de viagens e poder deletá-las ou acessar o detalhe de cada uma delas
-import React from "react";
 import { useHistory } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import axios from "axios";
+import TripItem from "./TripItem";
+import CardTrip from "./CardTrip";
+
 
 
 const AdminHomePage = () =>{
@@ -10,22 +14,43 @@ const AdminHomePage = () =>{
     history.goBack()
   }
   
-  const goLogin =() => {
+  const goToForm =() => {
     history.push ("/log")
 
-
-  
-
   }
+
+  const [ listAdm, setListAdm] = useState ([])
+
+  useEffect (() => {
+    axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/labeX/lais-medrado-joy/trip/NoIFVcOiSgTKTIPVZwXS').then(response =>{
+   
+    setListAdm(response) 
+  })
+}, []);
+
+
+
     return (
-  
+
       <div> 
-      <button onClick={goBack}> VOLTAR </button>
-      <button onClick ={goLogin}> ENTRAR</button>
-      <button> CRIAR VIAGEM  </button>
-      <button> LOGOUT </button>
+
+      {listAdm.map((trip) =>{
+        return <TripItem trip={trip}  key={trip.id} />
+        })}   
+ 
+
+    
       
 
+       PAINEL ADMINISTRATIVO 
+      {listAdm.map((trip) =>{
+       return <CardTrip trip={trip}  key={trip.id} />
+       })}   
+
+      <button onClick= {goBack}>Voltar </button>     
+      <button onClick = {goToForm}>INSCREVER-SE</button>
+
+      
       </div>
     )
     
