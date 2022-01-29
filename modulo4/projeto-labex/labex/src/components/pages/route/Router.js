@@ -4,14 +4,14 @@ import {BrowserRouter,Switch,Route} from "react-router-dom";
 import ApplicationFormPage from '../ApplicationFormPage';
 import HomePage from '../HomePage';
 import ListTripsPage from '../ListTripsPage';
-import LoginPage from '../LoginPage';
+import {LoginPage} from '../LoginPage';
 import CreateTripPage from '../CreateTripPage';
 import AdminHomePage  from '../AdminHomePage';
 import TripDetailsPage from '../TripDetailsPage';
 
 
 
-function Router (){
+export const Router =()=>{
 
   return (
     <BrowserRouter>
@@ -61,4 +61,3 @@ function Router (){
   )
 }
 
-export default Router;

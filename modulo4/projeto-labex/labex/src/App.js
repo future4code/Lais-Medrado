@@ -1,5 +1,7 @@
-import React from 'react';
-import  Router  from './components/pages/route/Router';
+import {BrowserRouter,Switch,Route} from "react-router-dom";
+import ListTripsPage from './components/pages/ListTripsPage';
+import {LoginPage} from './components/pages/LoginPage';
+
 
 
 
@@ -7,7 +9,16 @@ import  Router  from './components/pages/route/Router';
  function App() {
   return (
     
-    <Router/>
+    <BrowserRouter>
+      <Switch>
+
+         <Route path= "/log" element={<LoginPage/>} />
+         <Route path= "/listtrip" element={<ListTripsPage/>} />
+
+
+        
+      </Switch>
+    </BrowserRouter>
 
 
     

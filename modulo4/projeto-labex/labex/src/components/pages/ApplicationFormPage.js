@@ -6,6 +6,7 @@ import axios from "axios";
 import styled from "styled-components";
 
 
+
 const Form= styled.input `
 
 width: 100%;
@@ -35,6 +36,9 @@ const goBack =() => {
 const [ tripOption, setTripOption] = useState ([])
 
 
+
+
+
 useEffect (() => {
   axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/labeX/lais-medrado-joy/trips').then(response =>{
  
@@ -51,20 +55,21 @@ useEffect (() => {
        <h1>ESCOLHA SUA VIAGEM </h1>
       
         <PerguntaOpcoes titulo="viagens" itens={tripOption}/>
-        
- 
- 
-      
-        <Form type= "text" placeholder = {"Nome"} />
-        <Form type= "text" placeholder={"Idade"} />
-        <Form type= "text" placeholder={"Texto de Candidatura"} />
-        <Form type= "text" placeholder={"Profissão"} />
-        
+        {/* <form onSubmit={handleSubmit(enviarContato)}>
+        <input 
+        type= "text" 
+        name ="name"
+        placeholder = {"name"} />
+
+        <input type= "text" placeholder={"Idade"} />
+        <input type= "text" placeholder={"Texto de Candidatura"} />
+        <input type= "text" placeholder={"Profissão"} />
+        </form>  */}
   <br/>
   <br/>
      
         <button onClick ={goBack}> voltar </button> 
-        <button> enviar </button> 
+        <button type="submit"> enviar </button> 
       </div>
     );
   }

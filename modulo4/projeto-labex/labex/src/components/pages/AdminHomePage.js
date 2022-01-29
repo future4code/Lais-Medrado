@@ -22,7 +22,7 @@ const AdminHomePage = () =>{
   const [ listAdm, setListAdm] = useState ([])
 
   useEffect (() => {
-    axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/labeX/lais-medrado-joy/trip/NoIFVcOiSgTKTIPVZwXS').then(response =>{
+    axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/labeX/lais-medrado-joy/trip/fd5XHyXo0gIozsFfLrVN').then(response =>{
    
     setListAdm(response) 
   })
