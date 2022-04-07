@@ -14,7 +14,7 @@ export  type UserAccount = {
 type ArrayUsers = UserAcccount[]
 
 
-UserAcount.balance= 0
+// UserAcount.balance= 0
 
 
 export  type UserExtrato = {
