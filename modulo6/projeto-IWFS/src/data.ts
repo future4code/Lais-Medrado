@@ -1,17 +1,20 @@
 //1-1. Crie um **tipo** para representar uma conta para o usuário
 
 export  type UserAccount = {
+    id: string,
     name: string,
-    cpf: number,
-    birthData: number,
+    cpf: string,
+    birthData: Date,
     balance: number,
-    extrato: number [] 
+    extrato: Array <UserExtrato> //array do type
 }
 
 
 //2-Crie um array global que armazene usuários na aplicação. Caso queira, 
 //pode iniciar este array com valores pré-definidos.
-type ArrayUsers = UserAcccount[]
+
+
+
 
 
 // UserAcount.balance= 0
@@ -19,8 +22,8 @@ type ArrayUsers = UserAcccount[]
 
 export  type UserExtrato = {
     value: number,
-    date: number,
-   descrition: string
+    date: Date,
+    descrition: string
 }
 
 //possuindo o valor, a data e uma descrição
