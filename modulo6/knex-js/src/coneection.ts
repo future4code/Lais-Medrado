@@ -1,12 +1,13 @@
 import knex from "knex";
+import dotenv from "dotenv"
 
 export const connection = knex({
 	client: "mysql",
 	connection: {
-    host: process.env.DB_HOST,
+    host: "35.226.146.116",
     port: 3306,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME
+    user:"419749-lais-silva",
+    password: "#qC8RCZqo2~@eIBKASeq",
+    database:"joy-419749-lais-silva"
   }
 });
