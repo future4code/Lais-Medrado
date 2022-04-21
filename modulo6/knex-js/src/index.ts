@@ -18,7 +18,8 @@ app.use(cors());
 
 
 
-//1- a) Explique como é a resposta que temos quando usamos o raw.
+//1- 
+//a) Explique como é a resposta que temos quando usamos o raw.
 
 // raw é um dos métodos que o knex utilizq para acessar o banco de dados, raw(crú) , ele permite que a pessoa
 //acesse os dados na sql , jogando os comandos exatamente como jogariamos no worbench, então podemos usa os comandos
@@ -26,23 +27,17 @@ app.use(cors());
 //
 
 
-app.get("/actor", async (req: Request, res: Response): Promise<void> => {
-   try {
-     // usando o método raw
-     //    const result =  await connection.raw(`
-     //         SELECT * FROM Actor
-     //     `)
- 
-     // usando o query builder
-     const result = await connection("Actor");
-     // const result = await connection("Actor").select() // funciona igualmente
- 
-     res.status(200).send(result);
-   } catch (error: any) {
-     res.status(500).send(error.sqlMessage || error.message);
-   }
- });
- 
+//b) b) Faça uma função que busque um ator pelo nome;
+  
+
+        
+
+
+
+
+
+
+
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
@@ -51,4 +46,4 @@ const server = app.listen(process.env.PORT || 3003, () => {
     } else {
        console.error(`Failure upon starting server.`);
     }
-});
+   });
