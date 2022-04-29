@@ -6,13 +6,13 @@ Content-Type: application/json
 
 {
  "name": "John",
- "nickName": "Jota",
+ "nickname": "Jota",
  "email": "john@hotmail.com"   
 }
 
 ### looking for user by id
 
-GET http://localhost:3003/user/d9ae2834-beb1-42b0-bd0a-9dce73be17fe
+GET http://localhost:3003/user/f4b16398-7efd-4d5c-b04d-87a8702c75f5
 # Content-Type: application/json
 
 
@@ -24,7 +24,7 @@ Content-Type: application/json
 {
  "name": "Lais",
 
- "nickName": "Lailda",
+ "nickname": "Lailda",
  "email": "laildamedrado@live.com" 
 }
 
