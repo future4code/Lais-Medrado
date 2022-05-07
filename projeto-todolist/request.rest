@@ -1,35 +1,32 @@
 
-###creating user
+###creatUser
 
-POST http://localhost:3003/user
+PUT http://localhost:3003/user
 Content-Type: application/json 
 
 {
- "name": "John",
- "nickname": "Jota",
- "email": "john@hotmail.com"   
+ "name": "Richard",
+ "nickname": "Richardinho",
+ "email": "Richardinhothecat@hotmail.com"   
 }
 
-### looking for user by id
+###getUserById
 
 GET http://localhost:3003/user/f4b16398-7efd-4d5c-b04d-87a8702c75f5
 # Content-Type: application/json
 
 
-### editing user
+### editUser
 
-PUT http://localhost:3003/user/1
+POST http://localhost:3003/user/edit/f4b16398-7efd-4d5c-b04d-87a8702c75f5
 Content-Type: application/json
 
 {
- "name": "Lais",
-
- "nickname": "Lailda",
- "email": "laildamedrado@live.com" 
+ "name": "Lais Medrado Soares" 
 }
 
 
-###creating task
+###creatTask
 
 POST http://localhost:3003/task
 Content-Type: application/json 
@@ -37,21 +34,20 @@ Content-Type: application/json
 
 {
 	  
-		"title": "Criar banco dos alunos",
-		"description": "Devemos criar o banco dos alunos para o módulo do backend",
-		"limitDate": "04/05/2020",
-        "creatorUserId": "002",
-        "status" : "to_do",
-        "creatorUserNickname": "Jota"
+		"title": "Criar banco  de alunos frontend",
+		"description": "criar banco de alunos frontend dentro do prazo",
+		"limitDate": "10/05/2030",
+        "author_Id": "a7c39cf5-0d44-4881-960e-eabcead4a54e"
 	
 	
 }
-###pick up task
 
-GET http://localhost:3003/task/1
+
+
+
+###getTaskById
+
+GET http://localhost:3003/task/086b20f3-8789-4717-aadf-4f929704ac99
 Content-Type: application/json
 
-### take task create UserID
-
-GET http://localhost:3003/task/1/user/1
 

@@ -1,6 +1,9 @@
 import  express, {application, Express } from 'express';
 import  createUser  from './endpoints/createUser';
+import createTask  from './endpoints/createTask';
 import getUserById from './endpoints/getUserById';
+import getTaskById from './endpoints/getTaskById';
+import editUser from './endpoints/editUser';
 import connection from "./connection";
 
 
@@ -8,12 +11,16 @@ import connection from "./connection";
 
 const app: Express = express()
 export const connect= connection()
-//connection é umaq função então para eu usar no index eu tenho que guardar numa variável
-app.use(express.json())
+app.use(express.json()) // para transformar o body da resposta em um  formato json e 
+//não em uma string e exibir 
+//no navegador 
 
 
-app.put('/user', createUser)
+app.put('/user', createUser) // dois argumentos, o caminho e um handler que é a função que será executada;
 app.get('/user/:id', getUserById)
+app.post('/user/edit/:id', editUser)
+app.post("/task", createTask)
+app.get("/task/:id", getTaskById)
 
 app.listen(3003, () => {
     console.log("Listening on port 3003");

@@ -2,31 +2,33 @@ import  { Request, Response } from 'express';
 import {v4 as generatedId} from "uuid";
 import insertUser from '../data/insertUser';
 
-// o bloco da função envolvido no try catch, que é o que será executado, é o que será executado caso não haja erro.
-// o bloco do catch é o que será executado caso haja erro.
+//função assíncrona que será executada quando o usuário chamar a rota /user
+    export default async function createUser(   
+        req: Request,
+        res: Response
+    ) {
+//corpo da função envolvido em um bloco try/catch que será executado 
+//caso não haja erro e se houver, será executado o catch
+    
+    try   {
 
-export default async function createUser(
-    req: Request,
-    res: Response
-) {
- try   {
-     //1-  valida as entradas da requisição 
+ // validação das entradas da requisição 
+        if(
+            !req.body.name ||
+            !req.body.nickname ||
+            !req.body.email
+        ) {
+// se não tiver nenhum dos campos, retorna um erro
+            res
+            .status(400)
+            .send("Preenchas os campos, 'name','nickName','email'");
+            return
+        }
+            
 
-      if(
-         !req.body.name ||
-         !req.body.nickname ||
-         !req.body.email
-      ) {
-          res
-          
-           .status(400)
-           .send("Preenchas os campos, 'name','nickName','email'");
-      }
-        
-      
      //chamando  o banco de dados
      const id = generatedId();
-     
+     // a função await é para esperar o banco de dados executar a função insertUser
      await insertUser (
          id,
         req.body.name,
@@ -36,7 +38,7 @@ export default async function createUser(
       
      
 
-     //repsonder a requisição 
+    //repsonder a requisição 
     res 
         .status(200)
         .send("Usuário criado com sucesso!");

@@ -1,7 +1,6 @@
 import { connect } from "..";
 
 
-
 export default async function iselectUserById (
 
     id: string
@@ -15,4 +14,4 @@ export default async function iselectUserById (
         //indice 0, retorna o objeto em vez dele dentro do array
     return result[0];
   
-}
+  }
