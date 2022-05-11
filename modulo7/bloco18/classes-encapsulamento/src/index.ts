@@ -54,8 +54,9 @@ class UserAccount {
     private name: string;
     private age: number;
     private balance: number = 0;
-    // private transactions: Transaction[] = [];
-  
+    private transactions: Transaction[] = []; // array de transações que 
+    //serão adicionadas ao array de transações do objeto
+    //
     constructor(
        cpf: string,
        name: string,
@@ -66,15 +67,24 @@ class UserAccount {
        this.name = name;
        this.age = age;
     }
+
+    public getCpf= () => console.log(this.cpf);
+    public getName= () => console.log(this.name);
+    public getAge= () => console.log(this.age);
+    public getBalance= () => console.log(this.balance);
+    public getTransactions= () => console.log(this.transactions);
+
+
+    }
   
-  }
+  
 
 
 
 // Objeto => instância criada apartir da Classe
-const idoso: UserAccount = new UserAccount("78456987258", "Carlos", 65);
+const felipe : UserAccount = new UserAccount("78456987258", "Carlos", 65);
 
-console.log (idoso)
+console.log (felipe)
 
 // app.listen(3003, () => console.log("Servidos....."))
 
@@ -91,3 +101,40 @@ console.log (idoso)
 //  getAge() retorna o valor da propriedad age
 //  getBalance() retorna o valor da propriedade balance
 
+
+
+//exercicio 02 
+
+
+
+// Transforme a variável de tipo abaixo, chamada Transaction em uma 
+// classe Transaction. Ela deve conter as mesmas propriedades: 
+// data, valor e descrição. Agora, porém, todas elas devem ser
+// privadas. Portanto, crie métodos (getters) para a leitura desses
+// valores, tanto para essa classe quanto para a classe UserAccount. 
+// Crie uma instância dessa classe e adicione à instância 
+// já criada de UserAccount 
+
+class Transaction {
+
+      private data: Date;
+      private value: number;
+      private description: string;
+
+      constructor(data: Date, value: number, description: string) {
+      this.data = data;
+      this.value = value;
+      this.description = description;
+  
+}
+
+      public getData = () => console.log(this.data);
+      public getValue = () => console.log (this.value);
+      public getDescription = () => console.log  (this.description)
+}
+
+const deposito : Transaction = new Transaction(new Date(), 100, "Deposito")
+getTransations(felipe);
+
+
+// adicionando a transação ao array de transações do objeto felipe
