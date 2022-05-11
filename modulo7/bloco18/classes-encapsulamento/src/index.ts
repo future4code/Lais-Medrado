@@ -134,7 +134,29 @@ class Transaction {
 }
 
 const deposito : Transaction = new Transaction(new Date(), 100, "Deposito")
-getTransations(felipe);
 
 
 // adicionando a transação ao array de transações do objeto felipe
+
+
+
+//EXERCICIO 03
+
+// Crie uma classe Bank, que será responsável por guardar todos os dados da aplicação. 
+// Ela deve possuir a propriedades accounts, privada (crie os getters e setters 
+// que achar apropriado
+
+
+class Bank {
+
+      private accounts: UserAccount[] = [];
+
+      constructor(accounts: UserAccount[]) {
+      this.accounts = accounts;
+  
+}
+     public getAccounts = () => console.log(this.accounts);
+     public setAccounts =() => console.log(this.accounts);
+}
+
+ 
