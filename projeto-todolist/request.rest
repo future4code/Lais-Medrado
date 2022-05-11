@@ -5,9 +5,9 @@ PUT http://localhost:3003/user
 Content-Type: application/json 
 
 {
- "name": "Richard",
- "nickname": "Richardinho",
- "email": "Richardinhothecat@hotmail.com"   
+ "name": "Cleyton",
+ "nickname": "Cley",
+ "email": "cleytinho@hotmail.com"   
 }
 
 ###getUserById
