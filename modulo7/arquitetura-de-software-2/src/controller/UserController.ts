@@ -1,6 +1,9 @@
 import { Request, Response } from "express";
 import { UserBusiness } from "../business/UserBusiness";
 
+//no UserController, importamos o UserBusiness para usar o método createUser , ele faz a chamada do método createUser
+// no contoller vem as responses, que são as respostas do usuário
+// 
 export class UserController {
   async create(req: Request, res: Response):Promise<void> {
     try {
@@ -11,7 +14,7 @@ export class UserController {
 
       res.status(201).send({ message: "Usuário cadastrado com sucesso" });
 
-    } catch (error) {
+    } catch (error:any) {
       res.status(400).send(error.message);
     }
   }
@@ -22,7 +25,7 @@ export class UserController {
       const result = await userBusiness.getAll()
 
       res.status(201).send(result)
-    } catch (error) {
+    } catch (error:any) {
       res.status(400).send(error.message);
 
     }

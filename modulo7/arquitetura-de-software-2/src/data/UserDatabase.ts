@@ -1,4 +1,4 @@
-import {User} from '../types/user';
+import {user} from '../types/user';
 import { BaseDatabase } from "./BaseDatabase";
 
 //1-aqui criamos nossas querys e fazemos as conexões com o banco de dados
@@ -23,7 +23,7 @@ export class UserDatabase extends BaseDatabase {
   }
 
   //async getAll é um método que retorna todos os usuários do banco de dados em um array ;
-  async getAll(): Promise<User[]> {
+  async getAll(): Promise<user[]> {
    
    
     const users = await UserDatabase.connection

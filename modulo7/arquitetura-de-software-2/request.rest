@@ -1,14 +1,10 @@
-###
-POST http://localhost:3003/createUser
+POST http://localhost:3003/user/create
 Content-Type: application/json
 
 {
-  "name": "lais",
-  "email": "lais@lalai.com",
-  "password": "123456"
+    "name": "lalai",
+    "email": "laiuda@email.com",
+    "password": "23432535"
 }
-
-
-
 
 

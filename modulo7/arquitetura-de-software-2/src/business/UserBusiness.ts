@@ -1,33 +1,40 @@
-import { v4 as generateId } from "uuid";
-import { UserDatabase } from "../data/UserDatabase";
+import { UserDatabase } from "../data/UserDatabase"
+import { v4 as generateId } from 'uuid'
+import { user } from "../types/user"
 
-// é tudo que que vai ser verificado na requisição do body , toas as regras de negócio!
-//todas as operações devem ser feitas no business
+
+
 
 export class UserBusiness {
-public createUser = async (input: any) => {
-   try {
-     const { name,  email, password } = input;
  
-     if (!name || !email || !password) {
-       throw new Error(
-         'Preencha os campos "name","nickname", "email" e "password"'
-       );
-     }
- 
-     const id: string = generateId();
- 
-     const userDatabase = new UserDatabase();
-     await userDatabase.insertUser({
-       id,
-       name,
-       email,
-       password,
-     });
-   } catch (error: any) {
-     throw new Error(error.message);
-   }
- };
+  //fazendo as validações do usuário  
+  async create({ email, name, password }: any):Promise<void> {
+    if (!email || !name || !password) {
+      throw new Error("Dados inválidos (email, name, password)")
+    }
+//se as validações derem certo ele cria um id para o usuário
+
+    const id = generateId()
+
+    //depois de criar o id ele cria o usuário e salva no banco de dados, o UserDatabase é uma 
+    //classe que herda de BaseDatabase e tem um método chamado createUser que recebe um objeto com os dados do usuário criado
+
+    const userDatabase = new UserDatabase()
+    await userDatabase.create({
+      id,
+      name,
+      email,
+      password
+    })
+  }
+
+  async getAll(): Promise<user[]> {
+
+    const userDatabase = new UserDatabase()
+
+    // const result = await
+
+    return userDatabase.getAll()
+  }
 
 }
-
