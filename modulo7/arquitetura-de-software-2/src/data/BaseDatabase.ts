@@ -3,6 +3,9 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
+//o  BaseDatabase é uma classe que tem um método chamado connection, 
+//que retorna uma conexão com o banco de dados
+
 export class BaseDatabase {
 
    protected static connection = knex({
